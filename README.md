@@ -15,7 +15,7 @@ And then execute:
 
 ## Usage
 
-#### Create `Adapter` to listen for the messages
+#### Create `Adapter` to listen for the messages:
 
 - It should inherit `OfflineBroadcaster::Adapter` (It can be placed inside model or wherever you want).
 - Overload collect method as below example.
@@ -33,7 +33,7 @@ end
 
 ```
 
-#### Add this to your `User` model
+#### Add this to your `User` model:
 
 - While calling `acts_as_offline_receiver` pass `online_attribute` so gem can identify user status (In our case we have `online` column in our database).
 - And also need to pass adapter we just wrote.
@@ -44,7 +44,7 @@ class User < ApplicationRecord
 end
 ```
 
-#### Let's test it
+#### Let's test it:
 
 ```ruby
 receiver = User.last
