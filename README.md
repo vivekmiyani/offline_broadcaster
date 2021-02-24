@@ -1,5 +1,6 @@
 # OfflineBroadcaster
-This gem aims to deliver messages/data or save into database for later delivery to the receiver according to their (online/offline) status.
+- This gem aims to deliver messages/data or save into database for later delivery to the receiver according to their (online/offline) status.
+- The main advantage to use this gem is that we can eliminate message delivery logic from our application code. So we can directly do broadcast without worrying about the user status.
 
 ## Installation
 
