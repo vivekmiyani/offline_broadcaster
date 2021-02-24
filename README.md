@@ -13,6 +13,27 @@ And then execute:
 
     $ bundle install
 
+Install migration yourself (as of now):
+
+```ruby
+class CreateOfflineBroadcasterRecords < ActiveRecord::Migration[6.1]
+  def change
+    create_table :offline_broadcaster_records do |t|
+      t.references :receiver, polymorphic: true
+      t.string     :channel
+      t.json       :data
+
+      t.timestamps
+    end
+  end
+end
+
+```
+
+Run migration:
+
+    $ rails db:migrate
+
 ## Usage
 
 #### Create `Adapter` to listen for the messages:
