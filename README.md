@@ -1,5 +1,5 @@
 # OfflineBroadcaster
-This gem aims to deliver messages/data or schedule it for deliver to the receiver according to their (online/offline) status.
+This gem aims to deliver messages/data or save into database for later delivery to the receiver according to their (online/offline) status.
 
 ## Installation
 
