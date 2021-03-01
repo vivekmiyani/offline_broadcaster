@@ -75,6 +75,7 @@ receiver.online
 
 # Send a message
 User::OfflineManager.deliver(channel: 'greeting_channel', receiver: receiver, data: 'Hello online user!!')
+User::OfflineManager.deliver(channel: 'greeting_channel', receiver: receiver, data: { message: 'Welcome!!' })
 # => # Some insert query will going to run.
 
 # Update the user status
